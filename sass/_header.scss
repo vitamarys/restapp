@@ -1,0 +1,28 @@
+.header {
+  padding: 30px 0;
+  .rest-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      font-size: 22px;
+      font-weight: 600;
+      color: $main-black;
+    }
+    .nav {
+      &__list {
+        display: flex;
+        gap: 28px;
+        &__item {
+          a {
+            transition: 0.3s;
+            &:hover {
+              opacity: 0.8;
+              transition: 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+}

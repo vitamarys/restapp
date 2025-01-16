@@ -1,0 +1,77 @@
+.steps {
+  padding: 80px 0;
+  .title {
+    margin-bottom: 58px;
+  }
+}
+.steps-wrap {
+  display: flex;
+  .step {
+    width: 33.333%;
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+
+    &.animate {
+      animation: 0.5s ease 0s 1 normal forwards running fade-up;
+      visibility: visible;
+    }
+    &::after {
+      content: "";
+      height: 2px;
+      width: calc(100% - 160px);
+      background-color: $green;
+      display: block;
+      position: absolute;
+      right: 35px;
+      top: 23px;
+    }
+    .step-number {
+      position: relative;
+      width: 93px;
+      height: 46px;
+      border-radius: 8px;
+      background: $border-gradient;
+      padding: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 28px;
+
+      .content {
+        background: $bg-gradient;
+        border-radius: 8px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 22px;
+        }
+      }
+    }
+    &__title {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 28px;
+      margin-bottom: 18px;
+    }
+    &__deskr {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      max-width: 350px;
+    }
+  }
+  @for $i from 1 through 10 {
+    .step:nth-child(#{$i}) {
+      animation-delay: #{($i - 1) * 0.2}s;
+    }
+  }
+}

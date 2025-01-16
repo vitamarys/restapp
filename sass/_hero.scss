@@ -1,0 +1,22 @@
+.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-image: url("https://bookon.binotel.ua/upload/resto-app/main/main.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+  padding: 150px 70px;
+  .title {
+    max-width: 615px;
+    margin-bottom: 28px;
+    color: $white;
+  }
+  .deskr {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: $white;
+    margin-bottom: 28px;
+  }
+}

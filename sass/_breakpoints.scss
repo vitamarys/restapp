@@ -1,0 +1,11 @@
+$breakpoints: (
+  mobile: "(max-width: 768px)",
+  tablet: "(max-width: 1199px)",
+);
+@mixin adaptive($keys...) {
+  @each $key in $keys {
+    @media #{map-get($breakpoints, $key)} {
+      @content;
+    }
+  }
+}

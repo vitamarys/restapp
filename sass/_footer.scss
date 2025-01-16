@@ -1,0 +1,73 @@
+.footer {
+  padding-top: 80px;
+  background-color: $pastel;
+  .rest-container {
+    .top-section {
+      padding-bottom: 40px;
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      .block {
+        width: calc(25% - 30px);
+        .logo {
+          width: 130px;
+          margin-bottom: 24px;
+        }
+        .footer-title {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 24px;
+          margin-bottom: 10px;
+          &.green-border {
+            padding-bottom: 16px;
+            border-bottom: 2px solid $green;
+          }
+        }
+        .phone {
+          display: block;
+          color: $black-70;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 16px;
+          margin-bottom: 8px;
+        }
+        .mail {
+          display: block;
+          color: $black-70;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 16px;
+        }
+      }
+      .list {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        flex-wrap: wrap;
+        &__item {
+          width: 100%;
+          &:hover {
+            transition: 0.3s;
+            opacity: 0.8;
+          }
+          a {
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+          }
+        }
+        &.w-50 {
+          flex-direction: row;
+          gap: 16px 0;
+          .list__item {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}

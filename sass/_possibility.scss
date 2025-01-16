@@ -1,0 +1,71 @@
+.possibility {
+  padding: 80px 0;
+  .title {
+    margin-bottom: 58px;
+  }
+  .wrapper {
+    display: flex;
+    gap: 40px;
+    .list {
+      width: 65%;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      &__item {
+        display: flex;
+        align-items: center;
+        background-color: $pastel;
+        width: 100%;
+        gap: 28px;
+        padding: 18px 28px;
+        border-radius: 8px;
+        opacity: 0;
+        visibility: hidden;
+
+        &.animate {
+          animation: 0.5s ease 0s 1 normal forwards running fade-up;
+          visibility: visible;
+        }
+        .img-wrap {
+          position: relative;
+          width: 47px;
+          height: 47px;
+          border-radius: 8px;
+          background: $border-gradient;
+          padding: 1px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .content {
+            background: $bg-gradient;
+            border-radius: 8px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        .text {
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px;
+          .bold {
+            font-weight: 600;
+          }
+        }
+      }
+      .img-block {
+        width: calc(35% - 40px);
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

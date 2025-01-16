@@ -1,0 +1,28 @@
+.try {
+  padding: 80px 0 0;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    display: block;
+    background-color: $pastel;
+  }
+  .rest-container {
+    padding: 70px;
+    background-image: url("https://bookon.binotel.ua/upload/resto-app/main/try-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+  }
+  .title {
+    max-width: 660px;
+    color: $white;
+    margin-bottom: 48px;
+    border-radius: 8px;
+  }
+}

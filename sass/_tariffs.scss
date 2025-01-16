@@ -1,0 +1,48 @@
+.tariffs {
+  padding: 80px 0;
+  .wrapper {
+    width: 100%;
+    background-color: $green;
+    padding: 100px 70px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .title {
+      margin-bottom: 28px;
+    }
+    .descr {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      max-width: 350px;
+      margin-bottom: 35px;
+    }
+    .price {
+      font-size: 108px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 100px;
+      position: relative;
+      padding-right: 100px;
+      margin-bottom: 18px;
+      display: block;
+      &::after {
+        content: "грн/міс";
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 30px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+    .printer {
+      position: absolute;
+      left: 50%;
+      top: -7px;
+      transform: translateX(-50%);
+    }
+  }
+}

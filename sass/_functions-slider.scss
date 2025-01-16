@@ -1,0 +1,86 @@
+.functions-slider {
+  padding: 100px 0 80px;
+  .title {
+    max-width: 650px;
+    margin-bottom: 58px;
+  }
+  .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 86px 0;
+    width: 100%;
+    position: relative;
+    .function-row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .function {
+      max-width: 330px;
+      cursor: pointer;
+
+      &.active {
+        .img-wrap {
+          .content {
+            background: $green;
+            transition: 0.3s;
+          }
+        }
+      }
+      .img-wrap {
+        position: relative;
+        width: 66px;
+        height: 66px;
+        border-radius: 8px;
+        background: $border-gradient;
+        padding: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        .content {
+          background: $bg-gradient;
+          border-radius: 8px;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: 0.3s;
+        }
+      }
+      &__title {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        margin-bottom: 18px;
+      }
+      &__deskr {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+      }
+    }
+    .slider-wrapper {
+      position: absolute;
+      height: 570px;
+      width: 500px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url("https://bookon.binotel.ua/upload/resto-app/main/slider-bg.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      .swiper-wrapper {
+      }
+      .slider {
+        overflow: hidden;
+        width: 300px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
