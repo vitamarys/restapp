@@ -5,18 +5,18 @@ document.addEventListener("DOMContentLoaded", () => {
        slideClass: 'slide',
        slidesPerView: 'auto',
        grabCursor: true,
-       effect: "creative",
-       creativeEffect: {
-         prev: {
-           shadow: false,
-           translate: ["-120%", 0, -500],
-         },
-         next: {
-           shadow: false,
-           translate: ["120%", 0, -500],
-         },
-       },
-       speed: 700,
+       effect: "fade",
+      //  creativeEffect: {
+      //    prev: {
+      //      shadow: false,
+      //      translate: ["-120%", 0, -500],
+      //    },
+      //    next: {
+      //      shadow: false,
+      //      translate: ["120%", 0, -500],
+      //    },
+      //  },
+      //  speed: 700,
        autoplay: {
          delay: 3000,
          disableOnInteraction: false,
