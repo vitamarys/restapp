@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
        slideClass: 'slide',
        slidesPerView: 'auto',
        grabCursor: true,
-       effect: "fade",
+       effect: "coverflow",
       //  creativeEffect: {
       //    prev: {
       //      shadow: false,
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       //      translate: ["120%", 0, -500],
       //    },
       //  },
-      //  speed: 700,
+       speed: 700,
        autoplay: {
          delay: 3000,
          disableOnInteraction: false,
